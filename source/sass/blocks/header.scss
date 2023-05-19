@@ -1,0 +1,262 @@
+.header {
+  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  padding-top: 30px;
+
+  @include vp-1199 {
+    padding: 0;
+  }
+}
+
+.header__container {
+  position: relative;
+  max-width: 1160px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    padding: 34px 45px;
+  }
+
+  @include vp-767 {
+    padding: 15px;
+  }
+}
+
+.header__logo {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 35%;
+
+  & a {
+    font-family: $ff-alumni;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-right: 10px;
+
+    @include vp-1199 {
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
+
+.header__logo-link {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include vp-1199 {
+    position: relative;
+  }
+}
+
+.header__link {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-bottom: 12px;
+  max-width: 15%;
+
+  @include vp-1199 {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  & a {
+    font-family: $ff-alumni;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+
+    @include vp-1199 {
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.02em;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
+
+.header__desc {
+  position: relative;
+  display: flex;
+  padding-top: 19px;
+  padding-bottom: 53px;
+
+  @include vp-1199 {
+    justify-content: center;
+    padding-bottom: 48px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 63px;
+    justify-content: end;
+  }
+
+  & img {
+    margin-right: 700px;
+
+    @include vp-1199 {
+      width: 324px;
+      height: 390px;
+      margin: 0;
+      max-width: initial;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+}
+
+.header__desc-list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+  left: 21px;
+  top: 327px;
+
+  @include vp-1199 {
+    position: initial;
+    margin: auto 0;
+    padding-top: 46px;
+  }
+
+  @include vp-767 {
+    position: absolute;
+    top: 194px;
+    left: 0;
+    padding: 0;
+  }
+}
+
+.header__desc-item {
+  list-style: none;
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.header__description {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding: 114px 65px 15px 140px;
+  gap: 15px;
+
+  @include vp-1199 {
+    padding: 0;
+    padding-right: 28px;
+    gap: 0;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+
+  & p {
+    font-family: $ff-alumni;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 58px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0 53px 0 0;
+
+    @include vp-1199 {
+      font-size: 30px;
+      line-height: 41px;
+      margin: 51px 7px 6px 0;
+    }
+
+    @include vp-767 {
+      font-size: 24px;
+      line-height: 34px;
+      margin: 51px 5px 12px 0;
+    }
+  }
+
+  & h1 {
+    font-family: $ff-alumni;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 92px;
+    line-height: 110px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+    max-width: 298px;
+
+    @include vp-1199 {
+      font-size: 72px;
+      line-height: 86px;
+      text-transform: none;
+      margin-bottom: 36px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 24px;
+    }
+  }
+
+  & a {
+    font-family: $ff-roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 4px solid #ffffff;
+    padding: 20px;
+    margin-top: 31px;
+    min-width: 230px;
+    margin-left: 25px;
+
+    @include vp-1199 {
+      font-size: 11px;
+      line-height: 14px;
+      margin: 0;
+      min-width: auto;
+      padding: 20px 33px;
+      margin-left: auto;
+    }
+
+    @include vp-767 {
+      margin: 0;
+    }
+  }
+}
