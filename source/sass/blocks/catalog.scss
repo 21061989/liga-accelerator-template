@@ -1,0 +1,304 @@
+.catalog {
+  position: relative;
+  padding: 120px 0;
+  background: #f8f9fc;
+
+  @include vp-1199 {
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    padding: 70px 0;
+  }
+}
+
+.catalog__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+
+  & h2 {
+    font-family: $ff-alumni;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    color: #102654;
+    text-align: center;
+    margin: 76px auto 5px;
+
+    @include vp-1199 {
+      font-size: 42px;
+      line-height: 50px;
+      margin: 4px 14px 6px 0;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      line-height: 38px;
+      margin: 0 11px 6px 0;
+    }
+  }
+
+  & img {
+    position: absolute;
+    right: 0;
+    bottom: -150px;
+
+    @include vp-1199 {
+      bottom: -125px;
+      width: 347px;
+      height: 443px;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+}
+
+.catalog__tabs {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 36px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    border: 1px solid rgba(120, 120, 120, 0.2);
+    width: 341px;
+
+    @include vp-767 {
+      width: 290px;
+    }
+  }
+
+  @include vp-1199 {
+    margin-bottom: 42px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 33px;
+    gap: 15px;
+  }
+}
+
+.catalog__tabs-button {
+  position: relative;
+  margin: 0;
+  padding: 14px 24px;
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(16, 38, 84, 0.5);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 14px 27px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 15px 15px;
+  }
+
+  &.is-active {
+    color: #102654;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      border: 2px solid #d10a42;
+      width: 62%;
+      left: 0;
+      translate: 34%;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #102654;
+  }
+}
+
+.catalog__card-list {
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  width: 100%;
+
+  @include vp-1199 {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @include vp-767 {
+    gap: 35px;
+  }
+}
+
+.catalog__card-item {
+  border: 7px solid transparent;
+  margin: 0;
+  list-style: none;
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(16, 38, 84, 0.5);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+  aspect-ratio: 3.6/4.48;
+  padding: 56px 0;
+  gap: 10px;
+
+  @include vp-1199 {
+    width: 442px;
+    margin: auto;
+    aspect-ratio: 4.42/4.48;
+  }
+
+  @include vp-767 {
+    aspect-ratio: 2.9/3.84;
+    width: 290px;
+    padding: 44px 0;
+  }
+
+  &:hover,
+  &:focus {
+    border: 7px solid;
+    border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+    border-image-slice: 1;
+    box-sizing: border-box;
+  }
+
+  & h3 {
+    font-family: $ff-roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+    color: #102654;
+    margin: 0;
+
+    @include vp-767 {
+      font-size: 22px;
+      line-height: 24px;
+    }
+  }
+
+  & span {
+    font-family: $ff-roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #495a7d;
+  }
+
+  & a {
+    font-family: $ff-roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #102654;
+    outline: 2px solid #102654;
+    padding: 27px 44px;
+
+    @include vp-1199 {
+      padding: 24px 44px;
+    }
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+      color: #ffffff;
+      outline: none;
+    }
+  }
+}
+
+.catalog__card-price {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 56px auto 22px;
+  gap: 15px;
+
+  @include vp-1199 {
+    margin: 56px auto 26px;
+  }
+
+  @include vp-767 {
+    margin: 43px 0 22px 4px;
+    gap: 11px;
+  }
+
+  & svg {
+    @include vp-767 {
+      width: 24px;
+      height: 33px;
+    }
+  }
+
+  & span {
+    font-family: $ff-roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 90px;
+    color: #103aae;
+
+
+    @include vp-767 {
+      font-size: 48px;
+      line-height: 72px;
+    }
+
+    &::before {
+      content: attr(data-price-shadow);
+      position: absolute;
+      font-family: $ff-roboto;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 100px;
+      line-height: 150px;
+      color: #e8e8e8;
+      opacity: 0.48;
+      z-index: -1;
+      left: 50%;
+      bottom: 11%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+
+      @include vp-767 {
+        font-size: 80px;
+        line-height: 120px;
+      }
+    }
+  }
+}
