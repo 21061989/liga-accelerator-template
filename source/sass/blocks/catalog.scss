@@ -44,6 +44,8 @@
     position: absolute;
     right: 0;
     bottom: -150px;
+    width: 288px;
+    height: 494px;
 
     @include vp-1199 {
       bottom: -125px;

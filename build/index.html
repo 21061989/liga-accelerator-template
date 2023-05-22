@@ -253,10 +253,19 @@
               </section>
             </div>
           </div>
-          <span>Ежегодные соревнования по CrossFit</span>
+          <span>Ежегодные соревнования по&nbsp;CrossFit</span>
           <a href="#">Заполнить заявку</a>
         </div>
-        <img src="./img/advertising.webp" width="660" height="500" alt="Спортсмен с тальком">
+        <div class="advertising__wrapper-img">
+        <picture>
+          <source srcset="img/advertising-mobil.webp 1x, img/advertising-mobil@2x.webp 2x"
+            media="(max-width: 767px)">
+          <source srcset="img/advertising-tablet.webp 1x, img/advertising-tablet@2x.webp 2x"
+            media="(max-width: 1199px)">
+          <source type="image/webp" srcset="img/advertising.webp 1x, img/advertising@2x.webp 2x">
+          <img src="./img/advertising.webp" width="660" height="500" alt="Спортсмен с тальком">
+        </picture>
+      </div>
       </div>
     </section>
     <section class="coaches">

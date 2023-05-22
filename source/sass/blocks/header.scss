@@ -37,6 +37,11 @@
     text-transform: uppercase;
     padding-right: 10px;
 
+    &:hover,
+    &:focus {
+      color: #d6c5c5;
+    }
+
     @include vp-1199 {
       font-size: 24px;
       line-height: 29px;
@@ -82,6 +87,11 @@
     line-height: 31px;
     letter-spacing: 0.03em;
     color: #ffffff;
+
+    &:hover,
+    &:focus {
+      color: #d6c5c5;
+    }
 
     @include vp-1199 {
       font-size: 24px;
@@ -245,6 +255,12 @@
     margin-top: 31px;
     min-width: 230px;
     margin-left: 25px;
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+      color: #d6c5c5;
+    }
 
     @include vp-1199 {
       font-size: 11px;
