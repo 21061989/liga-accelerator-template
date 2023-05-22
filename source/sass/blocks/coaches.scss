@@ -1,0 +1,135 @@
+.coaches {
+  padding: 70px;
+}
+
+.coaches__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include vp-1199 {
+    align-items: center;
+  }
+
+  & h2 {
+    font-family: $ff-alumni;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    color: #102654;
+
+    @include vp-1199 {
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+}
+
+.coaches__wrapper-list {
+  position: relative;
+  display: flex;
+
+  & button {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top: 50%;
+    left: -40px;
+    height: 100%;
+    width: 40px;
+    transform: translate(-50%, -50%);
+
+    &:nth-child(n+2) {
+      left: 103%;
+    }
+  }
+}
+
+.coaches__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+
+  @include vp-1199 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.coaches__item {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  & h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: $ff-roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #ffffff;
+    z-index: 1;
+  }
+
+  &:hover {
+    & h3 {
+      top: 0;
+    }
+
+    .coaches__card {
+      display: block;
+    }
+  }
+}
+
+.coaches__card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: none;
+  background: rgba(16, 38, 84, 0.89);
+  padding: 57px;
+
+  & span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #b6bdcc;
+    text-align: center;
+  }
+}
+
+.coaches__card-list {
+  padding: 0;
+}
+
+.coaches__card-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
