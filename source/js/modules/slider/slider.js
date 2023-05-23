@@ -1,4 +1,4 @@
-import Swiper from '../vendor/swiper';
+import Swiper from '../../vendor/swiper';
 const trainersSwiper = document.querySelector('.coaches__wrapper-list');
 
 const initTrainersSwiper = () => {
