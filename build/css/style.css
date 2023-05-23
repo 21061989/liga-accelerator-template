@@ -3425,6 +3425,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 .coaches__wrapper-list button {
   position: absolute;
@@ -3443,13 +3445,11 @@ a {
 }
 
 .coaches__list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0;
   padding: 0;
-  gap: 40px;
 }
 @media (max-width: 1199px) {
   .coaches__list {
