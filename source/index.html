@@ -442,24 +442,30 @@
     <section class="promo">
       <div class="promo__wrapper">
         <h2>Акции</h2>
-        <div>
-          <div>
+        <div class="promo__year-wrapper">
+          <div class="promo__year">
             <h3>Год</h3>
             <span>4999</span>
             <p>Безлимитный абонемент в тренажерный зал</p>
             <a href="#">Подробнее</a>
           </div>
-          <img src="./img/promotion.webp" alt="">
+          <picture>
+            <source srcset="img/promotion-mobil.webp 1x, img/promotion-mobil@2x.webp 2x" media="(max-width: 767px)">
+            <source srcset="img/promotion-tablet.webp 1x, img/promotion-tablet@2x.webp 2x"
+              media="(max-width: 1199px)">
+            <source type="image/webp" srcset="img/promotion.webp 1x, img/promotion@2x.webp 2x">
+            <img src="./img/promotion.webp" width="280" height="462" alt="Девушка в спортивной форме">
+          </picture>
         </div>
-        <div>
-          <div>
+        <div class="promo__month-sale-wrapper">
+          <div class="promo__month">
             <h3>Месяц бесплатно</h3>
-            <p>Приведи друга, получи абонемент в подарок</p>
+            <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
             <a href="#">Подробнее</a>
           </div>
-          <div>
+          <div class="promo__sale">
             <h3>Скидка 20%</h3>
-            <p>Корпоративный фитнес с командой</p>
+            <p>Корпоративный фитнес с&nbsp;командой</p>
             <a href="#">Подробнее</a>
           </div>
         </div>
