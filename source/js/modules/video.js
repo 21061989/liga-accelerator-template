@@ -10,5 +10,3 @@ if (videoBtn) {
     videoContainer.classList.toggle('main__desc-video-wrapper--active');
   });
 }
-
-

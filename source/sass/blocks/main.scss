@@ -148,6 +148,10 @@
 
 .main__desc-video {
   display: none;
+
+  & iframe {
+    border: none;
+  }
 }
 
 

@@ -37,6 +37,7 @@ body {
 a {
   color: $color-default-black;
   text-decoration: none;
+  cursor: pointer;
 }
 
 img,
@@ -126,8 +127,4 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
-}
-
-a {
-  cursor: pointer;
 }
