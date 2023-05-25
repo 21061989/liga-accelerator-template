@@ -1,0 +1,11 @@
+.reviews {
+  height: 526px;
+
+  @include vp-1199 {
+    height: 434px;
+  }
+
+  @include vp-767 {
+    height: 494px;
+  }
+}

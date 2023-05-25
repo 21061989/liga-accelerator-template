@@ -1,0 +1,240 @@
+.form-contacts__wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form-contacts__form {
+  background: #102654;
+  color: #ffffff;
+  padding: 56px 170px 67px 103px;
+
+  @include vp-1199 {
+    padding: 60px 161px 66px 132px;
+  }
+
+  @include vp-767 {
+    padding: 65px 15px;
+  }
+
+  & form {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    row-gap: 15px;
+    max-width: 410px;
+    margin-left: auto;
+
+    @include vp-1199 {
+      gap: 58px;
+      row-gap: 16px;
+    }
+
+    @include vp-767 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  & fieldset {
+    border: none;
+    font-family: $ff-alumni;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    padding: 0;
+    grid-column: 1/3;
+
+    @include vp-1199 {
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 50px;
+      margin-bottom: 16px;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      line-height: 38px;
+      margin: 0 0 18px 0;
+    }
+  }
+
+  & button {
+    grid-column: 1/3;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    padding: 17px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    @include vp-767 {
+      margin: 7px 0 3px;
+    }
+  }
+
+  & input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #74819c;
+    width: 100%;
+    padding: 5px 5px 5px 0;
+    margin-bottom: 14px;
+    color: #ffffff;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &::placeholder {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+    }
+  }
+}
+
+.form-contacts__contacts {
+  padding: 57px 120px;
+  border-top: 1px solid #74819c;
+
+  @include vp-1199 {
+    padding: 61px 133px;
+  }
+
+  @include vp-767 {
+    padding: 66px 15px 62px;
+  }
+
+  & h2 {
+    font-family: $ff-alumni;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    color: #102654;
+    margin: 0;
+    margin-bottom: 37px;
+
+    @include vp-1199 {
+      font-size: 42px;
+      line-height: 50px;
+      margin-bottom: 32px;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+}
+
+.form-contacts__input.is-invalid input {
+  outline: 2px solid #c76e6e;
+  border-radius: 4px;
+}
+
+.form-contacts__input.is-valid input {
+  outline: 2px solid #66b15f;
+  border-radius: 4px;
+}
+
+.form-contacts__contacts-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 65px;
+  padding-left: 4px;
+  row-gap: 20px;
+  max-width: 410px;
+
+  @include vp-1199 {
+    padding: 0;
+    column-gap: 32px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &::before {
+    content: "";
+    height: 90%;
+    width: 0;
+    border: 1px solid #74819c;
+    left: 53%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+}
+
+.form-contacts__contacts-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include vp-767 {
+    &:nth-child(2n) {
+      order: 4;
+    }
+  }
+
+  & h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #102654;
+    margin: 0;
+    margin-bottom: 3px;
+
+    @include vp-1199 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+  }
+
+  & p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #102654;
+    margin: 0;
+
+    @include vp-1199 {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+}

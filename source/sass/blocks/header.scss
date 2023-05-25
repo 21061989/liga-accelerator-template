@@ -36,6 +36,7 @@
     color: #ffffff;
     text-transform: uppercase;
     padding-right: 10px;
+    z-index: 2;
 
     &:hover,
     &:focus {
@@ -73,6 +74,7 @@
   flex-direction: column;
   margin-bottom: 12px;
   max-width: 15%;
+  z-index: 2;
 
   @include vp-1199 {
     max-width: 100%;

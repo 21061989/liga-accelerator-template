@@ -1,5 +1,5 @@
 .coaches {
-  padding: 206px;
+  padding: 46px 0 139px;
 
 
   @include vp-1199 {
@@ -12,8 +12,14 @@
   }
 }
 
+.coaches__wrapper-btn-list {
+  max-width: 1500px;
+  padding: 0 70px;
+  position: relative;
+}
+
 .coaches__wrapper {
-  max-width: 320px;
+  max-width: 1366px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -32,10 +38,13 @@
     line-height: 65px;
     letter-spacing: 0.03em;
     color: #102654;
+    width: 1160px;
+    margin: 0 auto 48px;
 
     @include vp-1199 {
       font-size: 42px;
       line-height: 50px;
+      width: auto;
     }
 
     @include vp-767 {
@@ -47,8 +56,9 @@
 
 .coaches__wrapper-list {
   display: flex;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 1160px;
 }
 
 .coaches__list {
@@ -66,8 +76,9 @@
 
   & h3 {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 20%);
     font-family: $ff-roboto;
     font-style: normal;
     font-weight: 700;
@@ -76,48 +87,64 @@
     color: #ffffff;
     z-index: 1;
   }
+}
 
-  &:hover {
-    & h3 {
-      top: 0;
+.coaches__item:hover,
+.coaches__item:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  & h3 {
+    margin: 0;
+    top: 0;
+    transform: translate(-50%, 18%);
+  }
+
+  .coaches__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(16, 38, 84, 0.89);
+    padding: 75px 35px 15px 50px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+    & span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #b6bdcc;
+      text-align: center;
+      margin-right: 15px;
+      margin-bottom: 33px;
     }
 
-    .coaches__card {
-      display: block;
+    .coaches__card-item {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      list-style: disc;
     }
   }
+
+  .coaches__card-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0;
+    gap: 13px;
+    overflow: auto;
+    padding-left: 20px;
+  }
 }
+
 
 .coaches__card {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
   display: none;
-  background: rgba(16, 38, 84, 0.89);
-  padding: 57px;
-
-  & span {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #b6bdcc;
-    text-align: center;
-  }
-}
-
-.coaches__card-list {
-  padding: 0;
-}
-
-.coaches__card-item {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-  text-align: center;
 }
