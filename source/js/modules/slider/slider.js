@@ -1,8 +1,26 @@
 import Swiper from '../../vendor/swiper';
-const trainersSwiper = document.querySelector('.coaches__wrapper-list');
+const coachesSwiper = document.querySelector('.coaches__wrapper-list');
+const reviewsSwiper = document.querySelector('.reviews__list');
 
-const initTrainersSwiper = () => {
-  if (trainersSwiper) {
+const initReviewsSwiper = () => {
+  if (reviewsSwiper) {
+    (() =>
+      new Swiper('.reviews__list', {
+        direction: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 0,
+
+        navigation: {
+          nextEl: '.reviews__button--next',
+          prevEl: '.reviews__button--prev',
+        },
+      })
+    )();
+  }
+};
+
+const initCoachesSwiper = () => {
+  if (coachesSwiper) {
     (() =>
       new Swiper('.coaches__wrapper-list', {
         direction: 'horizontal',
@@ -39,4 +57,4 @@ const initTrainersSwiper = () => {
   }
 };
 
-export {initTrainersSwiper};
+export {initCoachesSwiper, initReviewsSwiper};
