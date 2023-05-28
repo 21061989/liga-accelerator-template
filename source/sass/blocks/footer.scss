@@ -14,7 +14,6 @@
 .footer__wrapper {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   max-width: 1160px;
@@ -22,6 +21,7 @@
 
   @include vp-767 {
     max-width: 470px;
+    flex-wrap: wrap;
   }
 
   & a {

@@ -1,12 +1,12 @@
 .main__desc {
-  padding: 120px 103px;
+  padding: 120px 0;
 
   @include vp-1199 {
-    padding: 100px 45px 180px;
+    padding: 100px 45px 20px;
   }
 
   @include vp-767 {
-    padding: 64px 0;
+    padding: 64px 0 70px;
   }
 }
 
@@ -22,10 +22,12 @@
     display: flex;
     flex-direction: column;
     gap: 35px;
+    padding-bottom: 160px;
   }
 
   @include vp-767 {
     gap: 25px;
+    padding-bottom: 0;
   }
 
   & img {
@@ -55,6 +57,7 @@
   height: 228px;
   left: 437px;
   bottom: -78px;
+  top: 288px;
 
   & a {
     display: none;
@@ -63,9 +66,10 @@
   @include vp-1199 {
     width: 266px;
     height: 167px;
-    top: 50%;
+    top: auto;
     left: 50%;
-    transform: translate(-50%, 120%);
+    bottom: 76px;
+    transform: translate(-50%);
   }
 
 

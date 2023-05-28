@@ -84,6 +84,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  height: auto;
 
   & img {
     @include vp-1199 {
@@ -98,9 +99,9 @@
 
   & h3 {
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     left: 50%;
-    transform: translate(-50%, 20%);
+    transform: translate(-50%);
     font-family: $ff-roboto;
     font-style: normal;
     font-weight: 700;
@@ -117,27 +118,42 @@
 
   & h3 {
     margin: 0;
-    top: 50px;
-    transform: translate(-50%, 0);
+    top: 0;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    text-align: center;
+  }
+
+  & img {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .coaches__card-wrapper {
+    background: rgba(16, 38, 84, 0.89);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
 
     @include vp-767 {
-      top: 40px;
+      padding-top: 40px;
     }
   }
 
   .coaches__card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background: rgba(16, 38, 84, 0.89);
-    padding: 75px 35px 15px 50px;
-    position: absolute;
+    padding: 0 35px 15px 50px;
     width: 100%;
     height: 100%;
-    top: 0;
 
     @include vp-767 {
-      padding: 65px 25px 10px 30px;
+      padding: 0 25px 10px 30px;
     }
 
     & span {
@@ -177,7 +193,6 @@
     padding-left: 20px;
   }
 }
-
 
 .coaches__card {
   display: none;

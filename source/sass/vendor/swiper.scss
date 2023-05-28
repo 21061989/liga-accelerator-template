@@ -202,6 +202,12 @@
     height: 19px;
   }
 }
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #007aff;
+}
+
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
   opacity: 0.35;
