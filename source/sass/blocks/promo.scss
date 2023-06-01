@@ -61,6 +61,7 @@
   & img {
     height: 100%;
     object-fit: cover;
+    background-color: #007aff;
 
     @include vp-1199 {
       width: 100%;

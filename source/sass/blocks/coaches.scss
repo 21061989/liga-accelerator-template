@@ -87,6 +87,8 @@
   height: auto;
 
   & img {
+    background-color: #b6bdcc;
+
     @include vp-1199 {
       aspect-ratio: 268/294;
       width: 100%;
@@ -138,22 +140,28 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    padding-top: 50px;
+    padding: 53px 45px 30px 50px;
+    overflow: auto;
+    aspect-ratio: 260/264;
+
+    @include vp-1199 {
+      padding-top: 50px;
+    }
 
     @include vp-767 {
-      padding-top: 40px;
+      padding: 40px 30px 20px 30px;
     }
   }
 
   .coaches__card {
     display: flex;
     flex-direction: column;
-    padding: 0 35px 15px 50px;
+    padding: 0;
     width: 100%;
     height: 100%;
 
     @include vp-767 {
-      padding: 0 25px 10px 30px;
+      padding: 0;
     }
 
     & span {
@@ -163,11 +171,16 @@
       line-height: 150%;
       color: #b6bdcc;
       text-align: center;
-      margin-right: 15px;
-      margin-bottom: 33px;
+      margin-right: 5px;
+      margin-bottom: 30px;
+
+      @include vp-1199 {
+        margin-right: 12px;
+        margin-bottom: 30px;
+      }
 
       @include vp-767 {
-        margin-right: 5px;
+        margin-right: 0;
       }
     }
 

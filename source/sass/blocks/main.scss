@@ -1,5 +1,5 @@
 .main__desc {
-  padding: 120px 0;
+  padding: 120px 0 189px;
 
   @include vp-1199 {
     padding: 100px 45px 20px;
@@ -64,12 +64,14 @@
   }
 
   @include vp-1199 {
-    width: 266px;
-    height: 167px;
+    min-width: 266px;
+    min-height: 167px;
     top: auto;
     left: 50%;
     bottom: 76px;
     transform: translate(-50%);
+    width: 39%;
+    height: auto;
   }
 
 
@@ -202,6 +204,16 @@
     font-size: 18px;
     line-height: 27px;
     color: #102654;
+    margin-bottom: 39px;
+    display: block;
+
+    @include vp-1199 {
+      margin-bottom: 35px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 0;
+    }
   }
 
   & p {
@@ -211,11 +223,9 @@
     font-size: 16px;
     line-height: 24px;
     color: #102654;
-    margin: 0;
+    margin: 0 0 8px;
 
     &:nth-child(2n+3) {
-      margin: 39px 0 8px;
-
       @include vp-1199 {
         margin: 34px 55px 8px;
       }
@@ -230,5 +240,11 @@
         display: none;
       }
     }
+  }
+}
+
+.main__desc-wrapper-img {
+  & img {
+    background-color: #b6bdcc;
   }
 }

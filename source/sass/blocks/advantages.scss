@@ -1,6 +1,6 @@
 .advantages {
   background: #f8f9fc;
-  padding: 53px 103px 138px;
+  padding: 53px 103px 60px;
 
 
   @include vp-1199 {
@@ -29,7 +29,7 @@
     line-height: 65px;
     letter-spacing: 0.03em;
     color: #102654;
-    margin: 46px 0 49px 10px;
+    margin: 46px 0 -24px 10px;
 
     @include vp-1199 {
       font-size: 42px;
@@ -112,11 +112,13 @@
 .advantages__item {
   display: flex;
   gap: 30px;
-  padding: 75px 0 0;
+  padding: 0;
+  margin: 75px 0;
 
   @include vp-1199 {
     align-items: center;
     padding: 0;
+    margin: 0;
   }
 
   @include vp-767 {
@@ -247,6 +249,7 @@
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
   width: 100%;
   padding: 0 0 78px;
+  margin-bottom: 0;
 
   @include vp-1199 {
     border: none;

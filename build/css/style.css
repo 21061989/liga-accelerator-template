@@ -2319,6 +2319,7 @@ button,
   }
 }
 .header__desc img {
+  background-color: #102654;
   margin-right: 700px;
 }
 @media (max-width: 1199px) {
@@ -2498,7 +2499,7 @@ button,
 }
 
 .main__desc {
-  padding: 120px 0;
+  padding: 120px 0 189px;
 }
 @media (max-width: 1199px) {
   .main__desc {
@@ -2574,14 +2575,16 @@ button,
 }
 @media (max-width: 1199px) {
   .main__desc-video-wrapper {
-    width: 266px;
-    height: 167px;
+    min-width: 266px;
+    min-height: 167px;
     top: auto;
     left: 50%;
     bottom: 76px;
     -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
             transform: translate(-50%);
+    width: 39%;
+    height: auto;
   }
 }
 @media (max-width: 767px) {
@@ -2710,6 +2713,18 @@ button,
   font-size: 18px;
   line-height: 27px;
   color: #102654;
+  margin-bottom: 39px;
+  display: block;
+}
+@media (max-width: 1199px) {
+  .main__desc-text span {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .main__desc-text span {
+    margin-bottom: 0;
+  }
 }
 .main__desc-text p {
   font-family: "Roboto", "Arial", sans-serif;
@@ -2718,10 +2733,7 @@ button,
   font-size: 16px;
   line-height: 24px;
   color: #102654;
-  margin: 0;
-}
-.main__desc-text p:nth-child(2n+3) {
-  margin: 39px 0 8px;
+  margin: 0 0 8px;
 }
 @media (max-width: 1199px) {
   .main__desc-text p:nth-child(2n+3) {
@@ -2737,6 +2749,10 @@ button,
   .main__desc-text p:nth-child(2n+2) {
     display: none;
   }
+}
+
+.main__desc-wrapper-img img {
+  background-color: #b6bdcc;
 }
 
 .catalog {
@@ -2768,7 +2784,7 @@ button,
   letter-spacing: 0.03em;
   color: #102654;
   text-align: center;
-  margin: 76px auto 5px;
+  margin: 0 auto 5px;
 }
 @media (max-width: 1199px) {
   .catalog__wrapper h2 {
@@ -2934,7 +2950,6 @@ button,
       -ms-flex-align: center;
           align-items: center;
   z-index: 0;
-  aspect-ratio: 3.6/4.48;
   padding: 56px 0;
   gap: 10px;
 }
@@ -3498,6 +3513,9 @@ button,
   padding: 0;
   height: auto;
 }
+.coaches__item img {
+  background-color: #b6bdcc;
+}
 @media (max-width: 1199px) {
   .coaches__item img {
     aspect-ratio: 268/294;
@@ -3562,12 +3580,20 @@ button,
           align-items: center;
   width: 100%;
   height: 100%;
-  padding-top: 50px;
+  padding: 53px 45px 30px 50px;
+  overflow: auto;
+  aspect-ratio: 260/264;
+}
+@media (max-width: 1199px) {
+  .coaches__item:hover .coaches__card-wrapper,
+.coaches__item:focus .coaches__card-wrapper {
+    padding-top: 50px;
+  }
 }
 @media (max-width: 767px) {
   .coaches__item:hover .coaches__card-wrapper,
 .coaches__item:focus .coaches__card-wrapper {
-    padding-top: 40px;
+    padding: 40px 30px 20px 30px;
   }
 }
 .coaches__item:hover .coaches__card,
@@ -3579,14 +3605,14 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 35px 15px 50px;
+  padding: 0;
   width: 100%;
   height: 100%;
 }
 @media (max-width: 767px) {
   .coaches__item:hover .coaches__card,
 .coaches__item:focus .coaches__card {
-    padding: 0 25px 10px 30px;
+    padding: 0;
   }
 }
 .coaches__item:hover .coaches__card span,
@@ -3597,13 +3623,20 @@ button,
   line-height: 150%;
   color: #b6bdcc;
   text-align: center;
-  margin-right: 15px;
-  margin-bottom: 33px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+}
+@media (max-width: 1199px) {
+  .coaches__item:hover .coaches__card span,
+.coaches__item:focus .coaches__card span {
+    margin-right: 12px;
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 767px) {
   .coaches__item:hover .coaches__card span,
 .coaches__item:focus .coaches__card span {
-    margin-right: 5px;
+    margin-right: 0;
   }
 }
 .coaches__item:hover .coaches__card .coaches__card-item,
@@ -3641,7 +3674,7 @@ button,
 
 .advantages {
   background: #f8f9fc;
-  padding: 53px 103px 138px;
+  padding: 53px 103px 60px;
 }
 @media (max-width: 1199px) {
   .advantages {
@@ -3680,7 +3713,7 @@ button,
   line-height: 65px;
   letter-spacing: 0.03em;
   color: #102654;
-  margin: 46px 0 49px 10px;
+  margin: 46px 0 -24px 10px;
 }
 @media (max-width: 1199px) {
   .advantages__wrapper h2 {
@@ -3793,7 +3826,8 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  padding: 75px 0 0;
+  padding: 0;
+  margin: 75px 0;
 }
 @media (max-width: 1199px) {
   .advantages__item {
@@ -3801,6 +3835,7 @@ button,
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
+    margin: 0;
   }
 }
 @media (max-width: 767px) {
@@ -3967,6 +4002,7 @@ button,
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
   width: 100%;
   padding: 0 0 78px;
+  margin-bottom: 0;
 }
 @media (max-width: 1199px) {
   .advantages__item--border {
@@ -4058,6 +4094,7 @@ button,
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: #007aff;
 }
 @media (max-width: 1199px) {
   .promo__year-wrapper img {
@@ -4795,7 +4832,7 @@ button,
 }
 @media (max-width: 767px) {
   .footer {
-    padding: 46px 15px;
+    padding: 46px 5px 46px 15px;
   }
 }
 
@@ -4829,11 +4866,13 @@ button,
   letter-spacing: 0.02em;
   color: #ffffff;
   text-transform: uppercase;
+  margin-right: 38px;
 }
 @media (max-width: 1199px) {
   .footer__wrapper a {
     font-size: 24px;
     line-height: 29px;
+    margin-right: 29px;
   }
 }
 @media (max-width: 767px) {
@@ -4852,7 +4891,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 38px;
   margin: 0;
   padding: 0;
   margin-left: 11px;
@@ -4863,7 +4901,6 @@ button,
 }
 @media (max-width: 1199px) {
   .footer__nav-list {
-    gap: 29px;
     padding: 0;
     min-width: 391px;
     margin: 0;

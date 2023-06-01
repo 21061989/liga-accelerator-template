@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding: 46px 15px;
+    padding: 46px 5px 46px 15px;
   }
 }
 
@@ -33,10 +33,12 @@
     letter-spacing: 0.02em;
     color: #ffffff;
     text-transform: uppercase;
+    margin-right: 38px;
 
     @include vp-1199 {
       font-size: 24px;
       line-height: 29px;
+      margin-right: 29px;
     }
 
     @include vp-767 {
@@ -54,7 +56,6 @@
 
 .footer__nav-list {
   display: flex;
-  gap: 38px;
   margin: 0;
   padding: 0;
   margin-left: 11px;
@@ -63,7 +64,6 @@
   flex-wrap: wrap;
 
   @include vp-1199 {
-    gap: 29px;
     padding: 0;
     min-width: 391px;
     margin: 0;

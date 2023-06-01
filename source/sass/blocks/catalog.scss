@@ -25,7 +25,7 @@
     letter-spacing: 0.03em;
     color: #102654;
     text-align: center;
-    margin: 76px auto 5px;
+    margin: 0 auto 5px;
 
     @include vp-1199 {
       font-size: 42px;
@@ -171,7 +171,6 @@
   flex-direction: column;
   align-items: center;
   z-index: 0;
-  aspect-ratio: 3.6/4.48;
   padding: 56px 0;
   gap: 10px;
 
